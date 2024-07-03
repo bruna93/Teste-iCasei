@@ -6,9 +6,3 @@
   overflow-wrap: break-word;
   padding: 0;
 }
-
-@media (max-width: 375px) {
-  html {
-    font-size: 4.2666vw;
-  }
-}

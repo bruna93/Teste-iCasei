@@ -7,7 +7,8 @@ export default function routes(
     req: http.IncomingMessage;
   },
 ) {
-  const path = req.url || "/";
+  const url = (req.url || "/").split("?");
+  const path = url[0];
 
   switch (path) {
     case "/videos":
